@@ -921,6 +921,89 @@ h6 {
   padding-top: 150px;
 }
 
+.advan__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 95px;
+}
+
+.advan__item-content {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.advan__item-img {
+  max-width: 705px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.advan__item-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.advan__item-title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #0F0F0F;
+  margin-bottom: 90px;
+}
+
+.advan__boxes {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.advan__box {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.advan__box:last-child {
+  margin-bottom: 0;
+}
+
+.advan__box-img {
+  margin-right: 20px;
+}
+
+.advan__box-content {
+  font-size: 18px;
+  line-height: 139.19%;
+}
+
+.advan__item.left-image {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.advan__item.left-image .advan__item-content {
+  padding-left: 75px;
+}
+
 .contacts__wrapper {
   margin-top: 55px;
 }

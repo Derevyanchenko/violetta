@@ -2,4 +2,74 @@
 
 .advan {
     padding-top: 150px;
+
+    &__wrapper {
+        
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 95px;
+        &-content {
+            flex-grow: 1;
+        }
+        
+        &-img {
+            max-width: 705px;
+            flex-shrink: 0;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        &-title {
+            font-family: Montserrat;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 44px;
+            color: #0F0F0F;
+            margin-bottom: 90px;
+        }
+        
+    }
+
+    &__boxes {
+        max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__box {
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-img {
+            margin-right: 20px;
+            img {
+
+            }
+        }
+        &-content {
+            font-size: 18px;
+            line-height: 139.19%;
+        }
+    }
+
+    
+
+}
+
+.advan__item.left-image {
+    flex-direction: row-reverse;
+    .advan__item-content {
+        padding-left: 75px;
+    }
 }
