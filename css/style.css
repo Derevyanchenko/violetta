@@ -196,7 +196,6 @@ h6 {
 }
 
 .section__title {
-  text-align: center;
   font-weight: 800;
   font-size: 48px;
   line-height: 59px;
@@ -204,6 +203,7 @@ h6 {
 }
 
 .section__title-line {
+  display: block;
   margin-top: 20px;
   width: 86px;
   height: 2px;
@@ -877,6 +877,48 @@ h6 {
 
 .banner__form .btn-default {
   margin-top: 35px;
+}
+
+.about {
+  padding-top: 90px;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about__image {
+  max-width: 705px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.about__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about__content {
+  margin-left: 75px;
+}
+
+.about__content .section__title {
+  margin-bottom: 40px;
+}
+
+.about__content p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 17px;
+}
+
+.advan {
+  padding-top: 150px;
 }
 
 .contacts__wrapper {

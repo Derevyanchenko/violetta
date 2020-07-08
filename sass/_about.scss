@@ -1,0 +1,32 @@
+// about
+
+.about {
+    padding-top: 90px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        max-width: 705px;
+        flex-shrink: 0;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        margin-left: 75px;
+        .section__title {
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 17px;
+        }
+    }
+
+}

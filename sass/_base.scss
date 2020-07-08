@@ -101,13 +101,13 @@ h3,h4, h5, h6 {
 }
 
 .section__title {
-	text-align: center;
 	font-weight: 800;
 	font-size: 48px;
 	line-height: 59px;
 	font-family: 'Montserrat', sans-serif;
 
 	&-line {
+		display: block;
 		margin-top: 20px;
 		width: 86px;
 		height: 2px;
