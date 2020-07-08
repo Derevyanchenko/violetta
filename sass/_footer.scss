@@ -1,0 +1,49 @@
+// footer
+
+.footer {
+    padding: 50px 0; 
+    background: #000;
+    text-align: center;
+    color: #fff;
+
+    &__copy {
+        line-height: 1.5;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    &__policy {
+        color: #fff;
+        display: block;
+        margin-top: 25px;
+        white-space: nowrap;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 16px;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+
+// media queries
+
+@media (max-width: $lg) {
+
+	
+}
+
+@media (max-width: $md) {
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer__copy {
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+}
