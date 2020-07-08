@@ -6,15 +6,10 @@
          name="viewport">
       <meta content="ie=edge"
          http-equiv="X-UA-Compatible">
-      <link crossorigin="anonymous"
-         href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-         rel="stylesheet">
-      <link href="css/slick.css"
-         rel="stylesheet">
-      <link href="css/style.css"
-         rel="stylesheet">
-      <title>Adverting</title>
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link href="css/slick.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <title>VILLA VIOLETTA</title>
    </head>
    <body>
 
@@ -22,7 +17,7 @@
            <div class="container">
               <div class="header__wrapper">
                  <div class="custom-logo-link">
-                    <img src="" alt="VILLA VIOLETTA" class="custom-logo">
+                    <img src="img/logo.svg" alt="VILLA VIOLETTA" class="custom-logo">
                  </div>
                  <nav class="header__menu">
                     <ul class="header__list">
@@ -48,15 +43,15 @@
                  </nav>
                  <div class="header__info">
                     <a href="#" class="tel header__tel">
-                    <img src="" alt="">
+                    <img src="img/icon-tel.svg" alt="">
                     +38(066) 40-555-48
                     </a>
                     <div class="header__social">
                        <a href="#" class="header__social-link">
-                       <img src="" alt="">
+                       <img src="img/inst.svg" alt="">
                        </a>
                        <a href="#" class="header__social-link">
-                       <img src="" alt="">
+                       <img src="img/fb.svg" alt="">
                        </a>
                     </div>
                  </div>
@@ -65,9 +60,9 @@
         </header>
 
         <main class="banner">
-            <div class="banner__slider">
+            <div class="banner__slider" >
 
-                <div class="banner__slider-item">
+                <div class="banner__slider-item" style="background-image: url(img/header-bg.jpg);">
                     <div class="container">
                         <div class="banner__wrapper">
         
@@ -79,7 +74,7 @@
                                 </h1>
                                 <div class="banner__desc">
                                     <div class="banner__desc-location">
-                                        <img src="" alt="">
+                                        <img src="img/location-icon.svg" alt="">
                                     </div>
                                     <p class="banner__desc-text">
                                         Ул. Школьная 12-б Железный порт <br>
@@ -87,29 +82,38 @@
                                     </p>
                                 </div>
                             </div>
+
+                            <div class="banner__form">
+                                <div class="contacts__form-wrapper">
+                                    <h3 class="contacts__form-title">
+                                        Оставьте заявку
+                                    </h3>
+                                    <p class="contacts__form-text">и мы проконсультируем Вас по любому вопросу </p>
+                                    <form action="#" method="POST" class="ajax_form  auth__form">
+                                       <input type="hidden" name="action" value="contact_form">
+               
+                                        <div class="md-form name">
+                                            <input type="text" name="name" id="headerName" class="form-control" required="">
+                                            <label for="headerName">Ваше имя</label>
+                                            <span class="md-form__icon"></span>
+                                        </div>
+
+                                        <div class="md-form tel">
+                                            <span class="md-form__icon"></span>
+                                            <input type="text" id="headerPhone" name="phone" class="form-control" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="">
+                                            <label for="headerPhone">Номер телефона</label>
+                                        </div>
+
+               
+                                       <div class="text-center">
+                                        <button class="btn-default cta_btn">Оставить заявку</button>
+                                       </div>
+                                    </form>
+                                 </div>
+                            </div>
+
                         </div>
 
-                        <div class="banner__form">
-                            <div class="contacts__form-wrapper">
-                                <h3 class="contacts__form-title">
-                                    Оставьте заявку
-                                </h3>
-                                <p class="contacts__form-text">и мы проконсультируем Вас по любому вопросу </p>
-                                <form action="#" method="POST" class="ajax_form  contacts__form">
-                                   <input type="hidden" name="action" value="contact_form">
-           
-                                   <div class="form-field name">
-                                      <input type="text" name="name" placeholder="Ваше имя*" required=""> 
-                                   </div>
-           
-                                   <div class="form-field phone">
-                                      <input type="tel" name="phone" placeholder="Ваш телефон*" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="">
-                                   </div>
-           
-                                   <button class="banner__btn cta_btn contacts__form-btn">Оставить заявку</button>
-                                </form>
-                             </div>
-                        </div>
         
                     </div>
                 </div>

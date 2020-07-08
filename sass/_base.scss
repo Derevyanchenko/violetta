@@ -1,5 +1,6 @@
 // base
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Open+Sans:wght@400;700&display=swap');
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:600,800,900;");
 
 * {
 	margin: 0;
@@ -28,6 +29,7 @@ button {
 	background: transparent;
 	cursor: pointer;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 }
 
 input {
@@ -37,13 +39,19 @@ input {
 }
 
 body {
-	color: #222;
-	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
+	color: #0F0F0F;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
-h1, h2, h3,h4, h5, h6 {
-	font-weight: 700;
+h1, h2 {
+	font-weight: 800;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h3,h4, h5, h6 {
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -53,14 +61,63 @@ h1, h2, h3,h4, h5, h6 {
 
 }
 
+@media (max-width: 1440px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 990px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.container {
+		max-width: 760px;
+	}
+}
+
+@media (max-width: 640px) {
+	.container {
+		max-width: 480px;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		max-width: 380px;
+	}
+}
+
+
+
+
+
 .section {
-	padding: 105px 0;
+	// padding: 105px 0;
 }
 
 .section__title {
-	font-size: 30px;
-    font-weight: 900;
-    text-align: center;
+	text-align: center;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 59px;
+	font-family: 'Montserrat', sans-serif;
+
+	&-line {
+		margin-top: 20px;
+		width: 86px;
+		height: 2px;
+	}
+}
+
+
+
+.text-center {
+	text-align: center;
 }
 
 .section__text {
@@ -73,6 +130,38 @@ h1, h2, h3,h4, h5, h6 {
 	outline: none;
 }
 
+.btn-default {
+	padding: 21px 51px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	background: #01A9B4;
+	border-radius: 50px;
+	transition: all 0.3s;
+	&:hover {
+		background: #008088;
+	}
+}
+
+.btn-bordered {
+	padding: 21px 39px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #2D2D2D;
+	background: transparent;
+	border-radius: 30px;
+	transition: all 0.3s;
+	border: 3px solid #2D2D2D;
+	&:hover {
+		border: 3px solid #01A9B4;
+		color: #01A9B4;
+	}
+}
+
 // flash animation btn
 
 
@@ -82,9 +171,6 @@ h1, h2, h3,h4, h5, h6 {
 overflow: hidden;
 -webkit-transition: ease 0.5s;
 transition: ease 0.5s;
-&:hover {
-	color: #000 !important;
-}
 }
 
 .cta_btn:before {
@@ -135,6 +221,128 @@ animation-iteration-count: infinite;
 
 
 
+// form fields
+
+.md-form {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.md-form label {
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    bottom: 25px;
+    left: 35px;
+	font-size: 16px;
+	line-height: 1;
+    color: #A6A6A6;
+    font-weight: 400;
+    transition: transform .2s ease-out,color .2s ease-out;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.md-form>label {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+    &::after {
+        position: absolute;
+        top: 65px;
+        display: block;
+        content: "";
+        opacity: 0;
+        -webkit-transition: .2s opacity ease-out,0.2s color ease-out;
+        transition: .2s opacity ease-out,0.2s color ease-out;
+    }
+}
+
+
+.md-form label.active {
+    transform: translateY(-27px) translateX(-35px) scale(1);
+    font-weight: 600;
+	font-size: 14px;
+    line-height: 1;
+    color: #434343;
+    transition: transform .2s ease-out,color .2s ease-out,-webkit-transform .2s ease-out;
+}
+
+
+.md-form input {
+    width: 100%;
+	padding: 11px 35px;
+	padding-top: 0;
+    margin: 0;
+	background-color: transparent;
+	border: none;
+    border-bottom: 1px solid #CDCDCD;
+	font-size: 16px;
+	line-height: 1;
+	color: #0F0F0F;
+	font-weight: 400;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+.md-form {
+    position: relative;
+	margin-bottom: 55px;
+}
+
+.md-form.tel {
+	margin-bottom: 0;
+}
+
+.md-form {
+    input.active, textarea.active {
+     border-bottom: 1px solid #01A9B4 !important;
+     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    }
+}
+
+.md-form.name .md-form__icon {
+	display: flex !important;
+	background: url("../img/form-name.svg") no-repeat center !important;
+	left: 0;
+	width: 16px;
+	height: 17px;
+   background-size: cover;
+   position: absolute;
+   bottom: 14px;
+//    transform: translateY(-50%);
+}
+
+.md-form.tel .md-form__icon {
+	display: flex !important;
+	background: url("../img/form-tel.svg") no-repeat center !important;
+	left: 0;
+	width: 16px;
+	height: 17px;
+   background-size: cover;
+   position: absolute;
+   bottom: 14px;
+}
+
+.md-form.name .md-form__icon.active {
+	background: url("../img/form-name-active.svg") no-repeat center !important;
+}
+
+.md-form.tel .md-form__icon.active {
+	background: url("../img/form-tel-active.svg") no-repeat center !important;
+}
+
+
+
+
+
 // media queries
 
 @media (max-width: $lg) {
@@ -145,7 +353,7 @@ animation-iteration-count: infinite;
 @media (max-width: $md) {
 
 	.section {
-		padding: 50px 0;
+		// padding: 50px 0;
 	}
 
 	.section__title {

@@ -1,29 +1,16 @@
 // contacts
 
 .contacts {
-    background: url(../img/bg4.jpg) no-repeat center !important;
-    background-size: cover !important;
-    position: relative;
-    z-index: 0;
-    &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-    }
 
-    .section__title {
-        color: #fff;
-    }
-    .section__text {
-        margin-top: 10px;
-        text-align: center;
-        color: #fff;
-    }
+
+    // .section__title {
+    //     color: #fff;
+    // }
+    // .section__text {
+    //     margin-top: 10px;
+    //     text-align: center;
+    //     color: #fff;
+    // }
 
     &__wrapper {
         margin-top: 55px;
@@ -51,49 +38,27 @@
     &__form {
 
         &-title {
-            font-size: 22px;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
         }
         &-text {
-            font-size: 14px;
-            line-height: 1.55;
-            margin-bottom: 35px;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            margin-bottom: 60px;
         }
 
         &-wrapper {
-            margin: auto;
-            max-width: 460px;
-            padding: 35px;
-            background: #fff;
-            box-shadow: 0px 0px 30px 0px rgba(51, 51, 51, 0.1);
+            // margin: auto;
+            max-width: 455px;
+            padding: 50px 50px 50px 47px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 5px;
 
-            .form-field {
-                margin-bottom: 20px;
-                input {
-                    color: #000000;
-                    background-color: #f0f0f0;
-                    height: 50px;
-                    padding: 0 18px;
-                    font-size: 16px;
-                    line-height: 1.33;
-                    width: 100%;
-                    border: 0 none;
-                    outline: none;
-                }
-            }
-        }
-        &-btn {
-            width: 100%;
-            margin-top: 10px;
-            padding: 22px 15px;
-            font-size: 20px;
-        }
-
-        &-desc {
-            margin-top: 20px;
-            font-size: 14px;
-            text-align: center;
-            line-height: 1.55;
-            margin-bottom: 0;
+           
         }
     }
 
