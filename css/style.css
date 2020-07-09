@@ -1063,18 +1063,61 @@ h6 {
 
 .apartments {
   margin-top: 225px;
-  padding-top: 75px;
+  margin-bottom: 150px;
   background: #F2FAFC;
+  position: relative;
+}
+
+.apartments:before {
+  content: "";
+  display: block;
+  height: 148px;
+  width: 100%;
+  background: #fff url("../img/section-top.svg") no-repeat;
+  background-size: cover;
+}
+
+.apartments:after {
+  content: "";
+  display: block;
+  height: 148px;
+  width: 100%;
+  background: #fff url("../img/section-bottom.svg") no-repeat;
+  background-size: cover;
 }
 
 .apartments__tabs-wrapper {
   margin-top: 70px;
 }
 
+.apartments__tabs .reverse .apartments__tabs-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.apartments__tabs .reverse .apartments__tabs-row .col-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.apartments__tabs .reverse .apartments__tabs-row .col-grid .img-col-12 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .apartments__tabs-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .apartments__tabs-row .col-6 {
@@ -1082,11 +1125,22 @@ h6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.apartments__tabs-row .tabs-image {
+  height: 622px;
 }
 
 .apartments__tabs-row .tabs-image img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-height: 622px;
+  border-radius: 5px;
 }
 
 .apartments__tabs-row .cols-row {
@@ -1102,17 +1156,34 @@ h6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
-  margin: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 280px;
 }
 
 .apartments__tabs-row .cols-row .col-6 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 280px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.apartments__tabs-row .img-col-12 {
+  margin-top: 30px;
+  height: 310px;
 }
 
 .apartments__tabs-row .img-col-12 img {
   max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   height: auto;
+  max-height: 310px;
+  border-radius: 5px;
 }
 
 .contacts__wrapper {
