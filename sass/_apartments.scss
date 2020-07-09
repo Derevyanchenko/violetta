@@ -43,30 +43,7 @@
 
 
 .apartments {
-    margin-top: 225px;
-    // padding-top: 75px;
-    margin-bottom: 150px;
-    background: #F2FAFC;
-    position: relative;
-    &:before {
-        content: "";
-        display: block;
-        height: 148px;
-        width: 100%;
-        background: #fff url("../img/section-top.svg") no-repeat;
-        background-size: cover;
-
-    }
-    &:after {
-        content: "";
-        display: block;
-        height: 148px;
-        width: 100%;
-        background: #fff url("../img/section-bottom.svg") no-repeat;
-        background-size: cover;
-        
-    }
-
+    margin-top: 150px;
 
     &__tabs {
 
