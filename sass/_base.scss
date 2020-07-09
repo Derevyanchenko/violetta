@@ -281,6 +281,33 @@ animation-iteration-count: infinite;
 30% { left: 110%; margin-left: 80px; }
 100% { left: 110%; margin-left: 80px; } }
 
+// dots
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	li {
+		button {
+			margin: 0 15px;
+			font-size: 0px;
+			background: #606060;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			border: 4px solid #F2FAFC;
+		}
+	}
+
+	.slick-active {
+		button {
+			background: rgba(1, 169, 180, 0.5);
+			border: 4px solid rgba(1, 169, 180, 0.5);
+		}
+	}
+
+}
 
 
 // form fields

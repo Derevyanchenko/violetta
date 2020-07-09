@@ -109,12 +109,35 @@ $(document).mouseup(function (event) {
   }
 });
 
+// gallery show
+
+$(".gallery__switch").on("click", function() {
+
+  let box = $(".gallery__wrapper .row");
+
+  if ( box.hasClass("open") ) {
+
+    box.removeClass("open");
+    $(this).removeClass("open");
+    $(this).find("span").text("Ещё фото");
+
+  } else {
+
+    box.addClass("open");
+    $(this).addClass("open");
+    $(this).find("span").text("Скрыть");
+
+  }
+
+
+});
+
 
   // banner slider
 
   $('.banner__slider').slick({
-      dots: false,
-      arrows: true,
+      dots: true,
+      arrows: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -122,19 +145,27 @@ $(document).mouseup(function (event) {
       fade: true,
       cssEase: 'linear',
       appendDots: $(".banner__dots"),
-      prevArrow: $(".banner-prev"),
-      nextArrow: $(".banner-next"),
       responsive: [
         {
-          breakpoint: 2500,
+          breakpoint: 991,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: true,
-            dots: false
+            arrows: false,
+            dots: true
           }
-        },
+        }
+      ]
+    }); 
+
+    $('.reviews__slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      speed: 300,
+      appendDots: $(".reviews__dots"),
+      responsive: [
+
         {
           breakpoint: 991,
           settings: {

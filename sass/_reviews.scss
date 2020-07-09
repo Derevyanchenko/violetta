@@ -3,11 +3,12 @@
 .reviews {
 
     &__wrapper {
-        margin-top: 65px;
+        margin-top: 50px;
        
     }
 
     &__item {
+        margin: 15px 0;
         padding: 48px 30px;
         padding-bottom: 93px;
         position: relative;
@@ -45,8 +46,12 @@
 
     }
 
+    &__dots {
+        margin-top: 25px;
+    }
+
     &__btn {
-        margin-top: 48px;
+        margin-top: 33px;
     }
 
 }

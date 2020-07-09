@@ -5,6 +5,7 @@
 
     &__box {
         height: 337px;
+        margin-bottom: 30px;
         img {
             max-width: 100%;
             width: 100%;
@@ -13,4 +14,39 @@
         }
     }
 
+    &__wrapper {
+        .row {
+            max-height: 337px;
+            overflow: hidden;
+            transition: max-height .3s;
+        }
+    }
+
+    &__switch {
+        text-align: center;
+        cursor: pointer;
+        margin-top: 70px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        &-arrow {
+            margin: auto;
+            margin-top: 12px;
+            display: block;
+        }
+    }
+
+}
+
+.gallery__wrapper .row.open {
+    max-height: none;
+    transition: max-height .3s;
+}
+
+.gallery__switch.open {
+    img {
+        transition: all 0.3s;
+        transform: rotate(-180deg);
+    }
 }
