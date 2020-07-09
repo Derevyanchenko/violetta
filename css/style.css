@@ -1449,28 +1449,99 @@ h6 {
   transform: rotate(-180deg);
 }
 
+.contacts {
+  padding: 150px 0;
+}
+
+.contacts .contacts__form-wrapper {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 15px rgba(1, 169, 180, 0.25);
+  box-shadow: 0px 0px 15px rgba(1, 169, 180, 0.25);
+  border-radius: 5px;
+}
+
+.contacts .contacts__form-wrapper .btn-default {
+  margin-top: 35px;
+}
+
+.contacts-container {
+  max-width: 1080px;
+}
+
 .contacts__wrapper {
-  margin-top: 55px;
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.contacts__info {
-  padding-top: 35px;
+.contacts__item {
+  margin-bottom: 32px;
 }
 
-.contacts__block {
-  margin-bottom: 30px;
+.contacts__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 17px;
 }
 
-.contacts__block-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
+.contacts__item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 18px;
+  line-height: 28px;
+  color: #0E0E0E;
 }
 
-.contacts__block-text {
-  color: #222;
-  color: #fff !important;
-  font-size: 16px;
+.contacts__item-text img {
+  margin-top: 7px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 11px;
+}
+
+.contacts__item a.contacts__item-text:hover {
+  text-decoration: underline;
+}
+
+.contacts__item-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contacts__item-social {
+  margin-right: 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contacts__item-social img {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.contacts__item-social:hover {
+  opacity: 0.7;
+}
+
+.contacts__item-social__wrapper {
+  margin-bottom: 0;
 }
 
 .contacts__form-title {

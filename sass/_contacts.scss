@@ -1,38 +1,85 @@
 // contacts
 
 .contacts {
+    padding: 150px 0;
+    // background: url("../img/c");
+
+    .contacts__form-wrapper {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(1, 169, 180, 0.25);
+        border-radius: 5px;
+
+        .btn-default {
+            margin-top: 35px;
+        }
+    }
 
 
-    // .section__title {
-    //     color: #fff;
-    // }
-    // .section__text {
-    //     margin-top: 10px;
-    //     text-align: center;
-    //     color: #fff;
-    // }
+    &-container {
+        max-width: 1080px;
+    }
+
+
 
     &__wrapper {
-        margin-top: 55px;
+        margin-top: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__info {
-        padding-top: 35px;
+
     }
 
-    &__block {
-        margin-bottom: 30px;
-
+    &__item {
+        margin-bottom: 32px;
         &-title {
-            font-size: 20px;
-            font-weight: 700;
-            color: #fff;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 17px;
         }
+
         &-text {
-            color: #222;
-            color: #fff !important;
-            font-size: 16px;
+            display: flex;
+            align-items: flex-start;
+            font-size: 18px;
+            line-height: 28px;
+            color: #0E0E0E;
+            img {
+                margin-top: 7px;
+                flex-shrink: 0;
+                margin-right: 11px;
+
+            }
         }
+
+        a.contacts__item-text:hover {
+            text-decoration: underline;
+        }
+
+        &-socials {
+            display: flex;
+            align-items: center;
+        }
+
+        &-social {
+            margin-right: 40px;
+            transition: all 0.3s;
+            img {
+                flex-shrink: 0;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+
+            &__wrapper {
+                margin-bottom: 0;
+            }
+        }
+
     }
 
     &__form {
