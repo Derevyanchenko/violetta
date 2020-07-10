@@ -132,7 +132,7 @@ $(".gallery__switch").on("click", function() {
 
 });
 
-$(".banner__slider").on('slick', function (event, slick, currentSlide) {
+$(".banner__slider").on('afterChange', function (event, slick, currentSlide) {
 
   console.log("slide changed");
 

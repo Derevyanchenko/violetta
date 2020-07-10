@@ -44,6 +44,10 @@
 
 .apartments {
     margin-top: 150px;
+    position: relative;
+    background: #F2FAFC url(../img/apartmens-bg.png) no-repeat left 58%;
+    background-size: 35%;
+    z-index: 2;
 
     &__tabs {
 

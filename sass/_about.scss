@@ -2,6 +2,9 @@
 
 .about {
     padding-top: 90px;
+    padding-bottom: 150px;
+    position: relative;
+    background: url(../img/about-bg.png) no-repeat right 107%;
     &__wrapper {
         display: flex;
         align-items: center;

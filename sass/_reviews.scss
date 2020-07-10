@@ -1,7 +1,8 @@
 // reviews
 
 .reviews {
-
+    background: #F2FAFC url(../img/reviews-bg.png) no-repeat right calc(100% - 150px);
+    z-index: 0;
     &__wrapper {
         margin-top: 50px;
        
