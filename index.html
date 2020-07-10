@@ -247,7 +247,7 @@
 
             <div class="banner__call">
                 <div class="container">
-                    <button class="banner__call-btn pulse-button get-call-js">
+                    <button class="banner__call-btn pulse-button reversation-popup-js">
                         <img src="img/get-call-icon.svg" alt="">
                     </button>
                 </div>
@@ -633,7 +633,7 @@
                                     </div>
 
                                     <div class="price__item-btn__wrapper">
-                                        <button class="btn-default price__item-btn">Забронировать</button>
+                                        <button class="btn-default price__item-btn reversation-popup-js">Забронировать</button>
                                     </div>
 
                                 </div>
@@ -659,7 +659,7 @@
                                     </div>
 
                                     <div class="price__item-btn__wrapper">
-                                        <button class="btn-default price__item-btn">Забронировать</button>
+                                        <button class="btn-default price__item-btn reversation-popup-js">Забронировать</button>
                                     </div>
 
                                 </div>
@@ -685,7 +685,7 @@
                                     </div>
 
                                     <div class="price__item-btn__wrapper">
-                                        <button class="btn-default price__item-btn">Забронировать</button>
+                                        <button class="btn-default price__item-btn reversation-popup-js">Забронировать</button>
                                     </div>
 
                                 </div>
@@ -711,7 +711,7 @@
                                     </div>
 
                                     <div class="price__item-btn__wrapper">
-                                        <button class="btn-default price__item-btn">Забронировать</button>
+                                        <button class="btn-default price__item-btn reversation-popup-js">Забронировать</button>
                                     </div>
 
                                 </div>
@@ -801,7 +801,7 @@
                     <div class="reviews__dots"></div>
 
                     <div class="text-center">
-                        <button class="btn-bordered reviews__btn">Оставить отзыв</button>
+                        <button class="btn-bordered reviews__btn add-reviews-js">Оставить отзыв</button>
                     </div>
                 </div>
 
@@ -1011,6 +1011,127 @@
                 </div>
             </div>
         </footer>
+
+        
+        <div class="overlay reversation-overlay">
+			<div class="popup">
+				<div class="popup__wrapper">
+                    <div class="popup__close"><img src="img/popup-close.svg" alt=""></div>
+                    
+                    <div class="popup__row">
+
+                        <div class="popup__content">
+                            <h5 class="popup__title">Бронирование номеров</h5>
+                            <p class="popup__text">
+                                Вы можете забронировать нашу виллу <br> в режиме онлайн и получить гарантированную бронь.
+                            </p>
+                            <p class="popup__price">6 700 грн</p>
+
+                            <form action="#" method="POST" class="ajax_form  reversation__form">
+                                <input type="hidden" name="action" value="reversation__form">
+        
+                                 <div class="md-form name">
+                                     <input type="text" name="reversation-name" id="reversation-name" class="form-control" required="">
+                                     <label for="reversation-name">Ваше имя</label>
+                                     <span class="md-form__icon"></span>
+                                 </div>
+ 
+                                 <div class="md-form tel">
+                                     <span class="md-form__icon"></span>
+                                     <input type="text" id="reversation-phone" name="reversation-phone" class="form-control" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="">
+                                     <label for="reversation-phone">Номер телефона</label>
+                                 </div>
+ 
+        
+                                <div class="text-center">
+                                 <button class="btn-default cta_btn">Оставить заявку</button>
+                                </div>
+                             </form>
+
+
+                        </div>
+
+                        <div class="popup__right">
+                            <img src="img/popup-image.png" alt="">
+                        </div>
+
+                    </div>
+
+				</div>
+			</div>
+		</div>
+        <!-- // overlay -->
+        
+
+        <div class="overlay reviews-overlay">
+			<div class="popup">
+				<div class="popup__wrapper">
+                    <div class="popup__close"><img src="img/popup-close.svg" alt=""></div>
+                    
+                    <div class="popup__row">
+
+                        <div class="popup__content">
+                            <h5 class="popup__title">Оставить комментарий</h5>
+                            <p class="popup__text">
+                                Вы можете забронировать нашу виллу <br> в режиме онлайн и получить гарантированную бронь.
+                            </p>
+
+                            <form action="#" method="POST" class="ajax_form  reversation__form">
+                                <input type="hidden" name="action" value="reversation__form">
+        
+                                 <div class="md-form name">
+                                     <input type="text" name="reversation-name" id="reversation-name" class="form-control" required="">
+                                     <label for="reversation-name">Ваше имя</label>
+                                     <span class="md-form__icon"></span>
+                                 </div>
+ 
+                                 <div class="md-form tel">
+                                     <span class="md-form__icon"></span>
+                                     <input type="text" id="reversation-phone" name="reversation-phone" class="form-control" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required="">
+                                     <label for="reversation-phone">Номер телефона</label>
+                                 </div>
+ 
+                                 <div class="verification">
+                                     <p class="verification__title">Верификация</p>
+
+                                     <label class="checkbox required">
+                                        <input type="checkbox" required="required" name="agree">
+                                         <span class="checkbox__text">
+                                            Я не робот
+                                         </span>
+                                     </label>
+
+                                 </div>
+                             
+                             </form>
+
+
+                        </div>
+
+                        <div class="popup__right">
+
+                            <div class="popup__message">
+
+                                <p class="popup__message-title">
+                                    Сообщение
+                                </p>
+
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст здесь..."></textarea>
+
+                                <div class="text-center">
+                                    <button class="btn-default cta_btn">Оставить отзыв</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+				</div>
+			</div>
+		</div>
+		<!-- // overlay -->
 
 
       <script src="js/jquery-3.0.0.min.js"></script> 

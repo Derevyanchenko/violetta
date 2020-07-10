@@ -30,23 +30,35 @@
 // popup settings
 
 
-function show_popup()
+function show_reversation_popup()
 {
-  $(".overlay_popup").fadeIn(200);
+  $(".reversation-overlay").fadeIn(200);
+  $("body, html").css("overflow-y", "hidden");
+}
+
+function show_review_popup()
+{
+  $(".reviews-overlay").fadeIn(200);
   $("body, html").css("overflow-y", "hidden");
 }
 
 function close_popup()
 {
-  $('.overlay_popup').fadeOut(200);
+  $('.overlay').fadeOut(200);
   $("body, html").css("overflow-y", "");
 }
 
 
-$(".add-review-js").on("click", function(e) {
+$(".reversation-popup-js").on("click", function(e) {
   e.preventDefault();
-  show_popup();
+  show_reversation_popup();
 });
+
+$(".add-reviews-js").on("click", function(e) {
+  e.preventDefault();
+  show_review_popup();
+});
+
 
 $(".popup__close").on("click", function() {
   close_popup();
