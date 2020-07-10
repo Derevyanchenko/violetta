@@ -132,6 +132,13 @@ $(".gallery__switch").on("click", function() {
 
 });
 
+$(".banner__slider").on('slick', function (event, slick, currentSlide) {
+
+  console.log("slide changed");
+
+  $(".slide-counter p").text(currentSlide<9?`0${currentSlide+1}`:currentSlide+1);
+  });
+
 
   // banner slider
 
@@ -175,6 +182,7 @@ $(".gallery__switch").on("click", function() {
         }
       ]
     }); 
+    
 
 
 
