@@ -1,37 +1,120 @@
+(function($){				
+  jQuery.fn.lightTabs = function(options){
+      
+      var createTabs = function(){
+          tabs = this;
+          i = 0;
+          
+          showPage = function(i){
+              $(tabs).children("div").children("div").hide();
+              $(tabs).children("div").children("div").eq(i).show();
+              $(tabs).children("ul").children("li").removeClass("active");
+              $(tabs).children("ul").children("li").eq(i).addClass("active");
+          }
+          
+          showPage(0);				
+          
+          $(tabs).children("ul").children("li").each(function(index, element){
+              $(element).attr("data-page", i);
+              i++;                        
+          });
+          
+          $(tabs).children("ul").children("li").click(function(){
+              showPage(parseInt($(this).attr("data-page")));
+          });				
+      };		
+      return this.each(createTabs);
+  };	
+})(jQuery);
+
+// popup settings
+
+
+function show_popup()
+{
+  $(".overlay_popup").fadeIn(200);
+  $("body, html").css("overflow-y", "hidden");
+}
+
+function close_popup()
+{
+  $('.overlay_popup').fadeOut(200);
+  $("body, html").css("overflow-y", "");
+}
+
+
+$(".add-review-js").on("click", function(e) {
+  e.preventDefault();
+  show_popup();
+});
+
+$(".popup__close").on("click", function() {
+  close_popup();
+});
+
+
+$(document).mouseup(function (event) {
+  if ($(".popup").is(":visible")) {
+      var popup = $(".popup");
+      if (!popup.is(event.target) && popup.has(event.target).length === 0) {
+          close_popup();
+      }
+  }
+});
+
+
+// ready
+
+
 $(document).ready(function() {
 
+// Cache selectors
+var lastId,
+    topMenu = $(".header"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find(".header__list a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
 
-  (function($){				
-    jQuery.fn.lightTabs = function(options){
-        
-        var createTabs = function(){
-            tabs = this;
-            i = 0;
-            
-            showPage = function(i){
-                $(tabs).children("div").children("div").hide();
-                $(tabs).children("div").children("div").eq(i).show();
-                $(tabs).children("ul").children("li").removeClass("active");
-                $(tabs).children("ul").children("li").eq(i).addClass("active");
-            }
-            
-            showPage(0);				
-            
-            $(tabs).children("ul").children("li").each(function(index, element){
-                $(element).attr("data-page", i);
-                i++;                        
-            });
-            
-            $(tabs).children("ul").children("li").click(function(){
-                showPage(parseInt($(this).attr("data-page")));
-            });				
-        };		
-        return this.each(createTabs);
-    };	
-})(jQuery);
-$(document).ready(function(){
-    $(".tabs").lightTabs();
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 300);
+  e.preventDefault();
 });
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href='#"+id+"']").parent().addClass("active");
+   }                   
+});
+
+    $(".tabs").lightTabs();
 
   // open mob menu
 
@@ -74,40 +157,7 @@ $(".md-form input, .md-form textarea").on("blur", function() {
 
 });
 
-// popup settings
 
-
-function show_popup()
-{
-  $(".overlay_popup").fadeIn(200);
-  $("body, html").css("overflow-y", "hidden");
-}
-
-function close_popup()
-{
-  $('.overlay_popup').fadeOut(200);
-  $("body, html").css("overflow-y", "");
-}
-
-
-$(".add-review-js").on("click", function(e) {
-  e.preventDefault();
-  show_popup();
-});
-
-$(".popup__close").on("click", function() {
-  close_popup();
-});
-
-
-$(document).mouseup(function (event) {
-  if ($(".popup").is(":visible")) {
-      var popup = $(".popup");
-      if (!popup.is(event.target) && popup.has(event.target).length === 0) {
-          close_popup();
-      }
-  }
-});
 
 // gallery show
 
@@ -183,8 +233,6 @@ $(".banner__slider").on('afterChange', function (event, slick, currentSlide) {
       ]
     }); 
     
-
-
 
 });
 
