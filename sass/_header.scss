@@ -1,11 +1,12 @@
 // header
 
 .header {
-	position: absolute;
+	position: fixed;
 	z-index: 999;
 	top: 0;
 	left: 0;
 	width: 100%;
+	transition: all 0.3s ease;
 
 	&__wrapper {
 		padding: 30px 0;
@@ -71,11 +72,8 @@
 
 .header.fixed {
     position: fixed;
-    z-index: 999;
-    background: #01a9b4;
-    left: 0;
-    right: 0;
-    top: 0;
+	background: rgba(61, 189, 197, 0.9);
+	transition: all 0.3s ease;
 }
 
 .menu-item {

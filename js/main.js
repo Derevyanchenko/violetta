@@ -74,11 +74,17 @@ $(document).mouseup(function (event) {
   }
 });
 
+$(window).scroll(function(){
+  $('header').toggleClass('fixed', $(this).scrollTop() > 0);
+});
+
 
 // ready
 
 
 $(document).ready(function() {
+
+  
 
 // Cache selectors
 var lastId,
