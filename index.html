@@ -13,9 +13,51 @@
    </head>
    <body>
 
+    <div class="mobileMenu-overlay">
+        <div class="mobileMenu">
+            <button class="mobileMenu__close">
+                <img src="img/menu-close.svg" alt="">
+            </button>
+            <div class="mobileMenu__container">
+                <nav class="header__menu mobile-menu">
+                    <ul class="header__list">
+                       <li class="menu-item active">
+                          <a href="#home">ГЛАВНАЯ</a>
+                       </li>
+                       <li class="menu-item">
+                          <a href="#about">О НАС</a>
+                       </li>
+                       <li class="menu-item">
+                          <a href="#apartments">АПАРТАМЕНТЫ</a>
+                       </li>
+                       <li class="menu-item">
+                          <a href="#prices">ЦЕНЫ</a>
+                       </li>
+                       <li class="menu-item">
+                          <a href="#reviews">ОТЗЫВЫ</a>
+                       </li>
+                       <li class="menu-item">
+                          <a href="#contacts">КОНТАКТЫ</a>
+                       </li>
+                    </ul>
+                 </nav>
+            </div>
+        </div>
+    </div>
+
         <header class="header">
            <div class="container">
               <div class="header__wrapper">
+
+                <div class="burger open-menu-js">
+                    <div class="open-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p class="burger__text">МЕНЮ</p>
+                </div>
+
                  <div class="custom-logo-link">
                     <img src="img/logo.svg" alt="VILLA VIOLETTA" class="custom-logo">
                  </div>
@@ -977,24 +1019,24 @@
                         </div>
                         <nav class="header__menu">
                            <ul class="header__list">
-                              <li class="menu-item active">
-                                 <a href="#">ГЛАВНАЯ</a>
-                              </li>
-                              <li class="menu-item">
-                                 <a href="#">О НАС</a>
-                              </li>
-                              <li class="menu-item">
-                                 <a href="#">АПАРТАМЕНТЫ</a>
-                              </li>
-                              <li class="menu-item">
-                                 <a href="#">ЦЕНЫ</a>
-                              </li>
-                              <li class="menu-item">
-                                 <a href="#">ОТЗЫВЫ</a>
-                              </li>
-                              <li class="menu-item">
-                                 <a href="#">КОНТАКТЫ</a>
-                              </li>
+                                <li class="menu-item active">
+                                    <a href="#home">ГЛАВНАЯ</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#about">О НАС</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#apartments">АПАРТАМЕНТЫ</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#prices">ЦЕНЫ</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#reviews">ОТЗЫВЫ</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#contacts">КОНТАКТЫ</a>
+                                </li>
                            </ul>
                         </nav>
                         <div class="header__info">

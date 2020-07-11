@@ -84,11 +84,28 @@ $(window).scroll(function(){
 
 $(document).ready(function() {
 
+
+  // burger
+
+  $(".open-menu-js").on("click", function() {
+
+    $(".mobileMenu-overlay").addClass("open");
+
+  });
+  
+
+  // burger close
+
+  $(".mobileMenu__close").on("click", function() {
+
+    $(".mobileMenu-overlay").removeClass("open");
+
+  });
   
 
 // Cache selectors
 var lastId,
-    topMenu = $(".header"),
+    topMenu = $(".header, .footer"),
     topMenuHeight = topMenu.outerHeight()+15,
     // All list items
     menuItems = topMenu.find(".header__list a"),
