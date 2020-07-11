@@ -1740,7 +1740,7 @@ h6 {
 }
 
 .advan__item-img {
-  max-width: 705px;
+  max-width: 50%;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
@@ -1804,6 +1804,199 @@ h6 {
 
 .advan__item.left-image .advan__item-content {
   padding-left: 75px;
+}
+
+@media (max-width: 1200px) {
+  .advan__item-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 50px;
+  }
+
+  .advan__boxes {
+    padding-right: 60px;
+  }
+
+  .advan__box {
+    margin-bottom: 70px;
+  }
+
+  .advan__box-content {
+    font-size: 16px;
+    line-height: 120.7%;
+  }
+
+  .advan__item.left-image .advan__item-content {
+    padding-left: 26px;
+  }
+
+  .advan__item {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .advan__item-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 50px;
+  }
+
+  .advan__boxes {
+    padding-right: 18px;
+  }
+
+  .advan__box-img {
+    margin-right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .advan__box-img img {
+    max-width: 100%;
+    height: 44px;
+  }
+
+  .advan__item.left-image .advan__item-content {
+    padding-left: 20px;
+  }
+
+  .advan__item-img {
+    max-width: 360px;
+    height: 424px;
+  }
+
+  .advan__item-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: 424px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .advan__item-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 50px;
+  }
+
+  .advan__boxes {
+    padding-right: 18px;
+  }
+
+  .advan__box-img {
+    margin-right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .advan__box-img img {
+    max-width: 100%;
+    height: 44px;
+  }
+
+  .advan__item.left-image .advan__item-content {
+    padding-left: 20px;
+  }
+
+  .advan__item-img {
+    max-width: 360px;
+    height: 424px;
+  }
+
+  .advan__item-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: 424px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .advan__item-title {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 35px;
+  }
+
+  .advan__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 45px;
+  }
+
+  .advan__item.left-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .advan__item-img {
+    margin-top: 40px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .advan__item-img img {
+    width: auto;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: none;
+  }
+
+  .advan__box {
+    margin-bottom: 40px;
+  }
+
+  .advan__boxes {
+    padding-right: 0;
+  }
+
+  .advan__item.left-image .advan__item-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .advan__wrapper {
+    margin-top: 50px;
+  }
+
+  .advan__box-content {
+    font-size: 15px;
+  }
+
+  .advan__box-img {
+    margin-right: 17px;
+    width: 39px;
+    height: 39px;
+  }
+
+  .advan__box-img img {
+    max-height: 39px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advan__box {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 360px) {
+  .advan__box {
+    margin-bottom: 45px;
+  }
+
+  .advan__item-title {
+    font-size: 20px;
+  }
 }
 
 .tabs {
