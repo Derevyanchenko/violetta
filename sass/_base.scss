@@ -454,7 +454,9 @@ animation-iteration-count: infinite;
 }
 
 
-
+.section__title-mob {
+	display: none;
+}
 
 
 // media queries
@@ -462,13 +464,26 @@ animation-iteration-count: infinite;
 
 @media (max-width: $xl) {
 
-
+	.section__title {
+		font-size: 40px;
+		line-height: 49px;
+		img {
+			margin-top: 15px;
+		}
+	}
 	
 }
 
 @media (max-width: $lg) {
 
-
+	.section__title {
+		font-size: 36px;
+		line-height: 44px;
+		img {
+			margin-top: 15px;
+		}
+	}
+	
 	
 }
 
@@ -476,15 +491,29 @@ animation-iteration-count: infinite;
 
 
 	.section__title {
-		font-size: 22px;
+		font-size: 32px;
+		line-height: 39px;
+		img {
+			margin-top: 10px;
+		}
 	}
+
+	.section__title-mob {
+		display: block;
+	}
+
+	.section__title-pc {
+		display: none;
+	}
+	
+
 }
 
 
-@media (max-width: $xs) {
+@media (max-width: $xm) {
 
-	.btn-default,
-	.btn-bordered {
-		padding: 21px 35px;
+	.section__title {
+		font-size: 30px;
+		line-height: 37px;
 	}
 }
