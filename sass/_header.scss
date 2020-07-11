@@ -2,6 +2,7 @@
 
 .custom-logo-link {
 	margin-top: 5px;
+	display: flex;
 	img {
 		max-width: 100%;
 		height: auto;
@@ -181,7 +182,7 @@
 	&__container {
 		display: flex;
 		height: 100%;
-		padding: 90px;
+		padding: 0 90px;
 	}
 
 	.header__list {
@@ -194,6 +195,9 @@
 		.menu-item {
 			margin: 0;
 			margin-bottom: 40px;
+			&:last-child {
+				margin-bottom: 0;
+			}
 
 			a {
 				font-size: 32px;
@@ -326,6 +330,86 @@
 
 	.header__tel {
 		margin-right: 38px;
+	}
+
+}
+
+
+@media (max-width: $md) {
+
+	.header__tel {
+		margin-right: 17px;
+		font-size: 0;
+	}
+
+	.burger__text {
+		font-size: 15px;
+		line-height: 18px;
+		margin-left: 8px;
+	}
+
+	.header__social-link {
+		margin-right: 17px;
+		max-height: 17px;
+		max-width: 17px;
+		img {
+			max-height: 17px;
+		}
+	}
+
+	.header__tel img {
+		margin-right: 0;
+		width: 15px;
+		height: 15px;
+	}
+
+	.mobileMenu-overlay.open .mobileMenu {
+		width: 100%;
+		max-width: 425px;
+	}
+
+	.mobileMenu .header__list .menu-item a {
+		font-size: 24px;
+		line-height: 33px;
+	}
+
+	.mobileMenu__close {
+		right: 30px;
+		top: 30px;
+		max-width: 35px;
+		img {
+			max-width: 100%;
+		}
+	}
+
+}
+
+
+
+@media (max-width: $xm) {
+
+	.custom-logo-link {
+		max-width: 127px;
+	}	
+
+	.mobileMenu-overlay.open .mobileMenu {
+		max-width: 340px;
+	}
+
+	.mobileMenu__container {
+		padding: 0 60px;
+	}
+
+	.mobileMenu .header__list .menu-item {
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width: $xs) {
+
+	.burger__text {
+		display: none;
 	}
 
 }
