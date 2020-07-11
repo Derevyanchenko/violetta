@@ -84,6 +84,8 @@ $(window).scroll(function(){
 
 $(document).ready(function() {
 
+  $(".tabs__content-pc").lightTabs();
+  $(".tabs__content-mob").lightTabs();
 
   // burger
 
@@ -149,7 +151,6 @@ $(window).scroll(function(){
    }                   
 });
 
-    $(".tabs").lightTabs();
 
   // open mob menu
 
