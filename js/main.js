@@ -105,7 +105,7 @@ $(document).ready(function() {
 
 // Cache selectors
 var lastId,
-    topMenu = $(".header, .footer"),
+    topMenu = $(".header, .footer, .mobileMenu"),
     topMenuHeight = topMenu.outerHeight()+15,
     // All list items
     menuItems = topMenu.find(".header__list a"),

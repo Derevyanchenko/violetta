@@ -117,77 +117,94 @@
 
 // media queries
 
-@media (max-width: $lg) {
+@media (max-width: $xl) {
 
-	
-}
-
-@media (max-width: $md) {
-
-    .contacts__wrapper {
-        margin-top: 40px;
-    }
-
-    .contacts__block {
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    .contacts__block-title {
-        font-size: 16px;
-    }
-
-    .contacts__block-text {
-        font-size: 14px;
-    }
-
-    .contacts__info {
-        padding-top: 0;
-        margin-bottom: 30px;
-    }
-
-    .contacts__form-wrapper {
-        padding: 20px 15px;
-    }
-
+     .contacts__form-wrapper {
+        max-width: 371px;
+        padding: 40px;
+	}
+    
     .contacts__form-title {
         font-size: 22px;
+        line-height: 22px;
     }
 
     .contacts__form-text {
         font-size: 14px;
-        line-height: 1.55;
-        margin-bottom: 35px;
     }
 
-    .contacts__form-wrapper .form-field input {
-        height: 40px;
-        font-size: 13px;
-        line-height: 1.33;
+    .banner__form .btn-default {
+        margin-top: 30px;
     }
 
-    .contacts__form-wrapper .form-field {
-        margin-bottom: 10px;
+}
+
+
+@media (max-width: $lg) {
+
+    .contacts__form-wrapper {
+        margin: auto;
+        max-width: 351px;
+        padding: 30px;
+    }
+    
+    .banner__form .btn-default {
+        margin-top: 25px;
+    }
+   
+}
+
+@media (min-width: 481px) and (max-width: $md) {
+
+    .contacts__form-wrapper {
+        max-width: 460px;
+        padding: 30px;
+
+        .md-form {
+            margin-bottom: 0;
+        }
     }
 
-    .contacts__form-btn {
-        width: 100%;
-        margin-top: 10px;
-        padding: 20px 15px;
-        font-size: 16px;
-        max-width: 100%;
+    .field-wrapper {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+        .md-form {
+            padding-left: 15px;
+            padding-right: 15px;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .md-form.name .md-form__icon {
+            left: 15px;
+        }
+
+        .md-form.tel .md-form__icon {
+            left: 15px;
+        }
+
+        .md-form label {
+            font-size: 14px;
+            left: 45px;
+        }
+
+        .md-form input {
+            font-size: 14px;
+        }
     }
 
-    .contacts__form-desc {
-        margin-top: 20px;
-        font-size: 12px;
-        text-align: center;
-        line-height: 1.55;
-        margin-bottom: 0;
-    }
+}
 
-    .contacts__form {
-        text-align: center;
-    }
+@media (max-width: $xm) {
 
+    .contacts__form-wrapper {
+        max-width: 360px;
+        padding: 35px 30px 23px 30px;
+    }
+    
+    .banner__form .btn-default {
+        margin-top: 38px;
+    }
+   
 }

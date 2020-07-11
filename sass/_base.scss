@@ -80,7 +80,7 @@ h3,h4, h5, h6 {
 	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
 	.container {
 		max-width: 480px;
 	}
@@ -459,18 +459,32 @@ animation-iteration-count: infinite;
 
 // media queries
 
+
+@media (max-width: $xl) {
+
+
+	
+}
+
 @media (max-width: $lg) {
+
 
 	
 }
 
 @media (max-width: $md) {
 
-	.section {
-		// padding: 50px 0;
-	}
 
 	.section__title {
 		font-size: 22px;
+	}
+}
+
+
+@media (max-width: $xs) {
+
+	.btn-default,
+	.btn-bordered {
+		padding: 21px 35px;
 	}
 }
