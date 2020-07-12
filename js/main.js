@@ -262,12 +262,16 @@ $(".banner__slider").on('afterChange', function (event, slick, currentSlide) {
       speed: 300,
       appendDots: $(".reviews__dots"),
       responsive: [
-
         {
-          breakpoint: 991,
+          breakpoint: 1199.98,
           settings: {
-            arrows: false,
-            dots: true
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 767.98,
+          settings: {
+            slidesToShow: 1
           }
         }
       ]
