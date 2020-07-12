@@ -119,6 +119,31 @@
 
 @media (max-width: $xl) {
 
+    .contacts {
+        padding-top: 100px;
+    }
+
+    .contacts__wrapper {
+        margin-top: 55px;
+    }
+
+    .contacts__item-title {
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 13px;
+    }
+
+    .contacts__item-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .contacts__item {
+        margin-bottom: 25px;
+    }
+
+    // form
+
      .contacts__form-wrapper {
         max-width: 371px;
         padding: 40px;
@@ -137,10 +162,35 @@
         margin-top: 30px;
     }
 
+    .contacts__item-social {
+        margin-right: 33px;
+        &:first-child {
+            img {
+                height: 21px;
+            }
+        }
+
+        &:last-child {
+            img {
+                
+                height: 21px;
+            }
+        }
+    }
+
 }
 
 
+
+
 @media (max-width: $lg) {
+
+
+    .contacts {
+        padding-bottom: 130px;
+    }
+
+    // form
 
     .contacts__form-wrapper {
         margin: auto;
@@ -154,7 +204,13 @@
    
 }
 
+
+
+
 @media (min-width: 481px) and (max-width: $md) {
+
+
+    // form
 
     .contacts__form-wrapper {
         max-width: 460px;
@@ -196,7 +252,41 @@
 
 }
 
+@media (max-width: $md) {
+
+    .contacts {
+        padding-top: 75px;
+        padding-bottom: 90px;
+    }
+
+    .contacts__wrapper {
+        margin-top: 48px;
+        flex-direction: column-reverse;
+    }
+
+    .contacts__item-text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .contacts__item {
+        margin-bottom: 20px;
+    }
+
+    .contacts__info {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+}
+
+
 @media (max-width: $xm) {
+
+
+    // form
 
     .contacts__form-wrapper {
         max-width: 360px;
