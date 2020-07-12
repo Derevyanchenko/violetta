@@ -23,25 +23,66 @@
     .tel {
         margin-right: 0;
     }
+
+    .header__social {
+        display: none;
+    }
 }
 
 
 // media queries
 
-@media (max-width: $lg) {
+@media (max-width: $xl) {
+
+    .footer {
+
+         .tel {
+            margin-right: 38px;
+        }
+
+        .header__social {
+            display: flex;
+        }
+
+    }
+
+    .footer .header__wrapper {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
 
 	
 }
 
-@media (max-width: $md) {
 
-    // .footer {
-    //     padding: 40px 0;
-    // }
+@media (max-width: $lg) {
 
-    // .footer__copy {
-    //     line-height: 1.5;
-    //     font-size: 14px;
-    // }
+    .footer {
+
+         .tel {
+            margin-right: 35px;
+        }
+
+
+    }
+
+    .footer .header__wrapper {
+        padding-top: 25px;
+    }
+
+	
+}
+
+@media (max-width: $xm) {
+
+    .footer .tel {
+        margin-right: 0;
+    }
+
+    .footer {
+        .header__social {
+            display: none;
+        }
+    }
 
 }

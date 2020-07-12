@@ -16,13 +16,6 @@
         }
     }
 
-
-    &-container {
-        max-width: 1080px;
-    }
-
-
-
     &__wrapper {
         margin-top: 65px;
         display: flex;
@@ -113,6 +106,14 @@
 
 }
 
+@media (min-width: $xl) {
+
+    .contacts-container {
+        max-width: 1080px;
+    }
+
+
+}
 
 
 // media queries
