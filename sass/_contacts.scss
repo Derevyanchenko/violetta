@@ -178,6 +178,10 @@
         }
     }
 
+    #map iframe {
+        height: 480px;
+    }
+
 }
 
 
@@ -200,6 +204,10 @@
     
     .banner__form .btn-default {
         margin-top: 25px;
+    }
+
+    #map iframe {
+        height: 430px;
     }
    
 }
@@ -278,12 +286,24 @@
         margin-top: 40px;
     }
 
+    .contacts__item-social__wrapper {
+        margin-bottom: 0;
+        margin-top: 45px;
+    }
 
+    #map iframe {
+        height: 270px;
+    }
 
 }
 
 
 @media (max-width: $xm) {
+
+    .contacts {
+        padding-bottom: 80px;
+    }
+
 
 
     // form
@@ -297,4 +317,12 @@
         margin-top: 38px;
     }
    
+}
+
+@media (max-width: $xs) {
+
+    .contacts__item-title {
+        font-size: 20px;
+    }
+
 }

@@ -3221,6 +3221,10 @@ h6 {
   .contacts__item-social:last-child img {
     height: 21px;
   }
+
+  #map iframe {
+    height: 480px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -3236,6 +3240,10 @@ h6 {
 
   .banner__form .btn-default {
     margin-top: 25px;
+  }
+
+  #map iframe {
+    height: 430px;
   }
 }
 
@@ -3311,9 +3319,22 @@ h6 {
     width: 100%;
     margin-top: 40px;
   }
+
+  .contacts__item-social__wrapper {
+    margin-bottom: 0;
+    margin-top: 45px;
+  }
+
+  #map iframe {
+    height: 270px;
+  }
 }
 
 @media (max-width: 480px) {
+  .contacts {
+    padding-bottom: 80px;
+  }
+
   .contacts__form-wrapper {
     max-width: 360px;
     padding: 35px 30px 23px 30px;
@@ -3321,6 +3342,12 @@ h6 {
 
   .banner__form .btn-default {
     margin-top: 38px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contacts__item-title {
+    font-size: 20px;
   }
 }
 
