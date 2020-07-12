@@ -462,6 +462,7 @@ animation-iteration-count: infinite;
 // media queries
 
 
+
 @media (max-width: $xl) {
 
 	.section__title {
@@ -470,6 +471,11 @@ animation-iteration-count: infinite;
 		img {
 			margin-top: 15px;
 		}
+	}
+
+	.section-blue:before,
+	.section-blue:after {
+		height: 105px;
 	}
 	
 }
@@ -484,6 +490,12 @@ animation-iteration-count: infinite;
 		}
 	}
 	
+	.section-blue:before,
+	.section-blue:after {
+		height: 90px;
+	}
+
+	// section before and after
 	
 }
 
@@ -505,6 +517,11 @@ animation-iteration-count: infinite;
 	.section__title-pc {
 		display: none;
 	}
+
+	.section-blue:before,
+	.section-blue:after {
+		height: 85px;
+	}
 	
 
 }
@@ -517,3 +534,22 @@ animation-iteration-count: infinite;
 		line-height: 37px;
 	}
 }
+
+@media (max-width: $xs) {
+
+	.section__title {
+		font-size: 26px;
+		line-height: 30px;
+	}
+
+	.btn-default {
+		padding: 21px 40px;
+	}
+
+	
+	.section-blue:before,
+	.section-blue:after {
+		height: 80px;
+	}
+}
+

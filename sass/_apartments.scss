@@ -144,10 +144,21 @@
 
 // media queries
 
+@media (max-width: $xxl) {
+
+    .apartments {
+        background-size: 490px;
+    }
+
+}
+
 @media (max-width: $xl) {
 
     .apartments {
         margin-top: 100px;
+        background-size: 411px;
+        background-position-x: -79px;
+        background-position-y: 50%;
     }
 
     .section__text {
@@ -211,6 +222,14 @@
 
 @media (max-width: $lg) {
 
+    
+    .apartments {
+        margin-top: 100px;
+        background-size: 342px;
+        background-position-x: -80px;
+        background-position-y: 35%;
+    }
+
     .apartments__tabs-row .col-6 {
         padding-right: 10px;
         padding-left: 10px;
@@ -265,6 +284,13 @@
 
 @media (max-width: $md) {
 
+    .apartments {
+        margin-top: 100px;
+        background-size: 240px;
+        background-position-x: 0;
+        background-position-y: 19%;
+    }
+
     .tabs__content-mob {
         display: block;
     }
@@ -309,6 +335,11 @@
 
 @media (max-width: $xm) {
 
+    .apartments {
+        background-position-x: -34px;
+        background-position-y: 27%;
+    }
+
     .apartments__tabs-row .col-6 .tabs-image{
         height: 117px;
         img {
@@ -334,7 +365,15 @@
         }
     }
 
-    
-    
+
+}
+
+@media (max-width: $xs) {
+
+    .tabs ul li {
+        font-size: 14px;
+        padding-right: 3px;
+        margin-right: 11px;
+    }
 
 }

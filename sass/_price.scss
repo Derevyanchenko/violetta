@@ -349,7 +349,17 @@
 
 }
 
-@media (max-widtH: $xm) {
+@media (min-width: $md) {
+
+    .price__item-img img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+
+}
+
+@media (max-width: $xm) {
 
     .price__item-img {
         max-width: 100%;
@@ -377,6 +387,11 @@
         &:last-child {
             margin-left: 4px;
         }
+    }
+
+    .price__item-img img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 
 

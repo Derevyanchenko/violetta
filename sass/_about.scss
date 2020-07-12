@@ -37,10 +37,20 @@
 
 // media queries
 
+@media (max-width: $xxl) {
+
+    .about {
+        background-size: 280px;
+    }
+
+}
+
 @media (max-width: $xl) {
 
     .about {
         padding-top: 90px;
+        background-size: 238px;
+        background-position-y: 98%;
     }
 
     .about__image {
@@ -70,6 +80,7 @@
 
     .about {
         padding-top: 90px;
+        background-position-y: 104%;
     }
 
     .about__image {
@@ -101,7 +112,11 @@
     .about {
         padding-top: 30px;
         padding-bottom: 55px;
+        background-size: 131px;
+        background-position-y: 101%;
     }
+
+    
 
     .about__wrapper {
         flex-direction: column;

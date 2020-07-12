@@ -60,6 +60,15 @@
 // media queries
 
 
+@media (max-width: $xxl) {
+
+    .reviews {
+        background-size: 400px;
+        background-position-y: calc(100% - 110px);
+    }
+
+}
+
 @media (max-width: $xl) {
 
     .reviews__wrapper {
@@ -83,6 +92,11 @@
 }
 
 @media (max-width: $lg) {
+
+    .reviews {
+        background-size: 350px;
+        background-position-y: calc(100% - 110px);
+    }
 
     .reviews__wrapper {
         .row {
@@ -110,6 +124,11 @@
 
 @media (max-width: $md) {
 
+    .reviews {
+        background-size: 195px;
+        background-position-y: calc(100% - 110px);
+    }
+
     .reviews__item {
         margin: 15px;
         padding-bottom: 64px;
@@ -122,6 +141,11 @@
 }
 
 @media (max-width: $xm) {
+
+    .reviews {
+        background-size: 145px;
+        background-position-y: calc(100% - 110px);
+    }
 
     .reviews__item-name {
         margin-bottom: 29px;

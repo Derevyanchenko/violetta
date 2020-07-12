@@ -73,6 +73,23 @@
 	
 }
 
+
+
+@media (max-width: $md) {
+
+    .footer {
+
+         .tel {
+            font-size: 15px;
+            img {
+                margin-right: 5px;
+            }
+        }
+
+
+    }
+	
+}
 @media (max-width: $xm) {
 
     .footer .tel {

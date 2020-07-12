@@ -97,7 +97,25 @@
 
 // media queries
 
+@media (max-width: $xxl) {
+
+    .advan {
+        background-size: 350px;
+        &:after {
+            background-size: 350px;
+        }
+    }
+
+}
+
 @media (max-width: $xl) {
+
+    .advan {
+        background-size: 250px;
+        &:after {
+            background-size: 260px;
+        }
+    }
 
     .advan__item-title {
         font-size: 24px;
@@ -131,6 +149,10 @@
 
 @media (max-width: $lg) {
 
+    .advan {
+        background-size: 250px;
+    }
+
     .advan__item-title {
         font-size: 24px;
         line-height: 29px;
@@ -167,6 +189,8 @@
             max-height: 424px;
         }
     }
+
+    
 
 }
 
@@ -211,10 +235,23 @@
         }
     }
 
+    .advan {
+        background-position-y: 34%;
+    }
+
 
 }
 
 @media (max-width: $md) {
+
+    .advan {
+        background-size: 235px;
+        background-position-y: 9%;
+        &:after {
+            background-size: 175px;
+            background-position-y: 49%;
+        }
+    }
 
     .advan__item-title {
         font-size: 22px;
@@ -277,6 +314,16 @@
 
 
 @media (max-width: $xm) {
+
+    .advan {
+        background-size: 200px;
+        background-position-y: 8%;
+        background-position-x: -34%;
+        &:after {
+            background-size: 155px;
+            background-position-y: 45%;
+        }
+    }
 
     .advan__box {
         margin-bottom: 45px;
