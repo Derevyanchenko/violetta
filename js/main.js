@@ -27,6 +27,36 @@
   };	
 })(jQuery);
 
+(function($){				
+  jQuery.fn.lightTabsMob = function(options){
+      
+      var createTabsMob = function(){
+          tabsMob = this;
+          i = 0;
+          
+          showPageMob = function(i){
+              $(tabsMob).children("div").children("div").hide();
+              $(tabsMob).children("div").children("div").eq(i).show();
+              $(tabsMob).children("ul").children("li").removeClass("active");
+              $(tabsMob).children("ul").children("li").eq(i).addClass("active");
+          }
+          
+          showPageMob(0);				
+          
+          $(tabsMob).children("ul").children("li").each(function(index, element){
+              $(element).attr("data-page", i);
+              i++;                        
+          });
+          
+          $(tabsMob).children("ul").children("li").click(function(){
+            showPageMob(parseInt($(this).attr("data-page")));
+          });				
+      };		
+      return this.each(createTabsMob);
+  };	
+})(jQuery);
+
+
 // popup settings
 
 
@@ -84,8 +114,8 @@ $(window).scroll(function(){
 
 $(document).ready(function() {
 
+  $(".tabs__content-mob").lightTabsMob();
   $(".tabs__content-pc").lightTabs();
-  $(".tabs__content-mob").lightTabs();
 
   // burger
 
