@@ -1,59 +1,30 @@
-(function($){				
+(function($){               
   jQuery.fn.lightTabs = function(options){
-      
+
       var createTabs = function(){
           tabs = this;
           i = 0;
-          
-          showPage = function(i){
+
+          showPage = function(tabs, i){
               $(tabs).children("div").children("div").hide();
               $(tabs).children("div").children("div").eq(i).show();
               $(tabs).children("ul").children("li").removeClass("active");
               $(tabs).children("ul").children("li").eq(i).addClass("active");
           }
-          
-          showPage(0);				
-          
+
+          showPage(tabs, 0);              
+
           $(tabs).children("ul").children("li").each(function(index, element){
               $(element).attr("data-page", i);
               i++;                        
           });
-          
-          $(tabs).children("ul").children("li").click(function(){
-              showPage(parseInt($(this).attr("data-page")));
-          });				
-      };		
-      return this.each(createTabs);
-  };	
-})(jQuery);
 
-(function($){				
-  jQuery.fn.lightTabsMob = function(options){
-      
-      var createTabsMob = function(){
-          tabsMob = this;
-          i = 0;
-          
-          showPageMob = function(i){
-              $(tabsMob).children("div").children("div").hide();
-              $(tabsMob).children("div").children("div").eq(i).show();
-              $(tabsMob).children("ul").children("li").removeClass("active");
-              $(tabsMob).children("ul").children("li").eq(i).addClass("active");
-          }
-          
-          showPageMob(0);				
-          
-          $(tabsMob).children("ul").children("li").each(function(index, element){
-              $(element).attr("data-page", i);
-              i++;                        
-          });
-          
-          $(tabsMob).children("ul").children("li").click(function(){
-            showPageMob(parseInt($(this).attr("data-page")));
-          });				
-      };		
-      return this.each(createTabsMob);
-  };	
+          $(tabs).children("ul").children("li").click(function(){
+              showPage($(this).parent().parent(), parseInt($(this).attr("data-page")));
+          });             
+      };      
+      return this.each(createTabs);
+  };  
 })(jQuery);
 
 
@@ -114,8 +85,11 @@ $(window).scroll(function(){
 
 $(document).ready(function() {
 
-  $(".tabs__content-mob").lightTabsMob();
-  $(".tabs__content-pc").lightTabs();
+  $('.tabs').each(function() {
+
+    $(this).lightTabs();
+
+  });
 
   // burger
 
@@ -302,3 +276,15 @@ $(".banner__slider").on('afterChange', function (event, slick, currentSlide) {
 
 });
 
+$(window).on("load resize", function() {
+
+  if( $(window).width() <= 767 ) {
+
+    $(".price__wrapper").addClass("tabs");
+    $(".price__wrapper.tabs").lightTabs();
+
+  } else {
+    $(".price__wrapper").removeClass("tabs");
+  }
+
+});
