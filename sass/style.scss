@@ -21,3 +21,10 @@
 @import "popup";
 
 
+// *-compressor* | ren -newname {$_.name.replace("-compressor","")}
+
+// get-childitem *.jpg | foreach { rename-item $_ $_.Name.Replace(" -compressor", "") }
+
+// rename "-compressor*.txt" "///////////*.txt"
+
+// rename "*-compressor.jpg" "*///////////.txt"
