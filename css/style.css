@@ -2415,9 +2415,9 @@ h6 {
   }
 
   .section__text {
+    max-width: 527px;
     font-size: 15px;
     line-height: 24px;
-    text-align: left;
   }
 
   .tabs {
@@ -2426,6 +2426,10 @@ h6 {
 }
 
 @media (max-width: 767px) {
+  .section__text {
+    text-align: left;
+  }
+
   .apartments {
     margin-top: 100px;
     background-size: 240px;
@@ -3381,9 +3385,16 @@ h6 {
   }
 }
 
+@media (max-width: 1440px) {
+  .contacts {
+    background-size: 650px;
+  }
+}
+
 @media (max-width: 1200px) {
   .contacts {
     padding-top: 100px;
+    background-size: 567px;
   }
 
   .contacts__wrapper {
@@ -3443,6 +3454,7 @@ h6 {
 @media (max-width: 1000px) {
   .contacts {
     padding-bottom: 130px;
+    background-size: 550px;
   }
 
   .contacts__form-wrapper {
@@ -3466,10 +3478,6 @@ h6 {
     padding: 30px;
   }
 
-  .contacts__form-wrapper .md-form {
-    margin-bottom: 0;
-  }
-
   .field-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3485,6 +3493,7 @@ h6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+    margin-bottom: 0;
   }
 
   .field-wrapper .md-form.name .md-form__icon {
@@ -3509,6 +3518,7 @@ h6 {
   .contacts {
     padding-top: 75px;
     padding-bottom: 90px;
+    background-size: 430px;
   }
 
   .contacts__wrapper {
@@ -3546,6 +3556,7 @@ h6 {
 @media (max-width: 480px) {
   .contacts {
     padding-bottom: 80px;
+    background-size: 290px;
   }
 
   .contacts__form-wrapper {
@@ -3638,6 +3649,11 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.popup__right img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .popup__close {
@@ -3824,4 +3840,169 @@ h6 {
   height: 16px;
   border: 2px solid #01A9B4;
   background: #01A9B4;
+}
+
+@media (max-width: 1200px) {
+  .popup {
+    max-width: 740px;
+  }
+
+  .popup__content {
+    padding-right: 30px;
+  }
+
+  .popup__right {
+    max-width: 337px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 551px;
+  }
+
+  .popup__right > img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    max-height: 551px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .popup__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup {
+    max-width: 460px;
+  }
+
+  .popup__content {
+    padding: 30px;
+    padding-right: 30px;
+  }
+
+  .reversation-overlay .popup__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .reversation-overlay .popup__right {
+    height: 237px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .reversation-overlay .popup__right img {
+    max-height: 237px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+  }
+
+  .popup__content {
+    padding: 30px 25px;
+  }
+
+  .popup__title {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 13px;
+    text-align: center;
+  }
+
+  .popup__text {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .popup__price {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 55px;
+  }
+
+  .popup .btn-default {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup {
+    max-width: 360px;
+  }
+
+  .popup__content {
+    padding: 20px;
+  }
+
+  .reversation-overlay .popup__right {
+    height: 185px;
+  }
+
+  .reversation-overlay .popup__right img {
+    max-height: 185px;
+  }
+
+  .popup__title {
+    text-align: left;
+  }
+
+  .popup__text {
+    text-align: left;
+  }
+
+  .popup .btn-default {
+    margin-top: 0px;
+  }
+
+  .popup .md-form {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .popup__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .popup__text br {
+    display: none;
+  }
+
+  .reversation-overlay .popup__right {
+    height: 165px;
+  }
+
+  .reversation-overlay .popup__right img {
+    max-height: 165px;
+  }
+}
+
+@media (max-height: 568px) {
+  .popup {
+    max-height: 100vh;
+    overflow-y: scroll;
+    border-radius: 0;
+  }
+
+  .popup__right img {
+    border-radius: 0;
+  }
 }

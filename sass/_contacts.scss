@@ -118,10 +118,19 @@
 
 // media queries
 
+@media (max-width: $xxl) {
+
+    .contacts {
+        background-size: 650px;
+    }
+
+}
+
 @media (max-width: $xl) {
 
     .contacts {
         padding-top: 100px;
+        background-size: 567px;
     }
 
     .contacts__wrapper {
@@ -193,6 +202,7 @@
 
     .contacts {
         padding-bottom: 130px;
+        background-size: 550px;
     }
 
     // form
@@ -224,11 +234,9 @@
     .contacts__form-wrapper {
         max-width: 460px;
         padding: 30px;
-
-        .md-form {
-            margin-bottom: 0;
-        }
     }
+
+
 
     .field-wrapper {
         display: flex;
@@ -239,6 +247,7 @@
             padding-right: 15px;
             flex: 0 0 50%;
             max-width: 50%;
+            margin-bottom: 0;
         }
 
         .md-form.name .md-form__icon {
@@ -266,6 +275,7 @@
     .contacts {
         padding-top: 75px;
         padding-bottom: 90px;
+        background-size: 430px;
     }
 
     .contacts__wrapper {
@@ -303,6 +313,7 @@
 
     .contacts {
         padding-bottom: 80px;
+        background-size: 290px;
     }
 
 

@@ -269,9 +269,9 @@
     }
 
     .section__text {
+        max-width: 527px;
         font-size: 15px;
         line-height: 24px;
-        text-align: left;
     }
 
     .tabs {
@@ -283,6 +283,10 @@
 
 
 @media (max-width: $md) {
+
+    .section__text {
+        text-align: left;
+    }
 
     .apartments {
         margin-top: 100px;
