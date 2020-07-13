@@ -3882,6 +3882,22 @@ h6 {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .reviews-overlay .popup__right {
+    max-width: 350px;
+  }
+
+  .reviews-overlay .popup__content {
+    padding-right: 25px;
+  }
+
+  .reviews-overlay .popup__title {
+    margin-bottom: 15px;
+  }
+
+  .reviews-overlay .popup__text {
+    margin-bottom: 95px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3940,6 +3956,61 @@ h6 {
   .popup .btn-default {
     margin-top: 45px;
   }
+
+  .reviews-overlay .popup__right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .reviews-overlay .popup__content {
+    padding: 30px;
+    padding-top: 80px;
+  }
+
+  .reviews-overlay .popup__text {
+    margin-bottom: 70px;
+  }
+
+  .reviews-overlay .popup__text br {
+    display: none;
+  }
+
+  .reviews-overlay .popup__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .reviews-overlay .verification {
+    margin-top: 20px;
+  }
+
+  .reviews-overlay .popup .btn-default {
+    margin-top: 35px;
+  }
+
+  .reviews-overlay .popup__right {
+    padding-top: 15px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .reviews-overlay .popup__message {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+  }
+
+  .reviews-overlay textarea {
+    margin-right: 0;
+    max-height: 120px;
+    border-bottom: 1px solid #CDCDCD;
+  }
+
+  .reviews-overlay .popup__message-title {
+    margin-bottom: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -3974,6 +4045,23 @@ h6 {
   .popup .md-form {
     margin-bottom: 30px;
   }
+
+  .popup__close {
+    width: 42px;
+    height: 42px;
+  }
+
+  .reviews-overlay .popup__content {
+    padding-top: 65px;
+  }
+
+  .reviews-overlay .popup__text {
+    display: none;
+  }
+
+  .reviews-overlay .popup__title {
+    margin-bottom: 57px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -3992,6 +4080,19 @@ h6 {
 
   .reversation-overlay .popup__right img {
     max-height: 165px;
+  }
+
+  .reviews-overlay .popup__content {
+    padding: 30px 25px;
+    padding-top: 65px;
+  }
+}
+
+@media (max-height: 630px) {
+  .reviews-overlay .popup {
+    max-height: 100vh;
+    overflow-y: scroll;
+    border-radius: 0;
   }
 }
 
